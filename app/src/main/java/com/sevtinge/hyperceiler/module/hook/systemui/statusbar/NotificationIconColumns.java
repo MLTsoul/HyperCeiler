@@ -62,10 +62,14 @@ public class NotificationIconColumns extends BaseHook {
                     if (mShowNotificationIcons) {
                         XposedHelpers.setObjectField(param.thisObject, "mMaxDots", maxDotsNum);
                         XposedHelpers.setObjectField(param.thisObject, "mMaxStaticIcons", maxIconsNum);
+                        XposedHelpers.setObjectField(param.thisObject, "mMaxIconsOnAod", maxIconsNum);
+                        XposedHelpers.setObjectField(param.thisObject, "mMaxIconsOnLockscreen", maxIconsNum);
                         XposedHelpers.setObjectField(param.thisObject, "mMaxIconsOnLockscreen", maxIconsNum);
                     } else {
                         XposedHelpers.setObjectField(param.thisObject, "mMaxDots", 0);
                         XposedHelpers.setObjectField(param.thisObject, "mMaxStaticIcons", 0);
+                        XposedHelpers.setObjectField(param.thisObject, "mMaxIconsOnAod", 0);
+                        XposedHelpers.setObjectField(param.thisObject, "mMaxIconsOnLockscreen", 0);
                         XposedHelpers.setObjectField(param.thisObject, "mMaxIconsOnLockscreen", 0);
                     }
                 }
@@ -90,9 +94,13 @@ public class NotificationIconColumns extends BaseHook {
                     if (mShowNotificationIcons) {
                         XposedHelpers.setObjectField(param.thisObject, "mMaxDots", maxDotsNum);
                         XposedHelpers.setObjectField(param.thisObject, "mMaxStaticIcons", maxIconsNum);
+                        XposedHelpers.setObjectField(param.thisObject, "mMaxIconsOnAod", maxIconsNum);
+                        XposedHelpers.setObjectField(param.thisObject, "mMaxIconsOnLockscreen", maxIconsNum);
                         XposedHelpers.setObjectField(param.thisObject, "mIsStaticLayout", true);
                     } else {
                         XposedHelpers.setObjectField(param.thisObject, "mMaxDots", 0);
+                        XposedHelpers.setObjectField(param.thisObject, "mMaxIconsOnAod", 0);
+                        XposedHelpers.setObjectField(param.thisObject, "mMaxIconsOnLockscreen", 0);
                         XposedHelpers.setObjectField(param.thisObject, "mMaxStaticIcons", 0);
                     }
                 }
@@ -106,10 +114,14 @@ public class NotificationIconColumns extends BaseHook {
                     if (mShowNotificationIcons) {
                         XposedHelpers.setObjectField(param.thisObject, "mMaxDots", maxDotsNum);
                         XposedHelpers.setObjectField(param.thisObject, "mMaxStaticIcons", maxIconsNum);
+                        XposedHelpers.setObjectField(param.thisObject, "mMaxIconsOnAod", maxIconsNum);
+                        XposedHelpers.setObjectField(param.thisObject, "mMaxIconsOnLockscreen", maxIconsNum);
                         XposedHelpers.setObjectField(param.thisObject, "mMaxIconsOnLockscreen", maxIconsNum);
                     } else {
                         XposedHelpers.setObjectField(param.thisObject, "mMaxDots", 0);
                         XposedHelpers.setObjectField(param.thisObject, "mMaxStaticIcons", 0);
+                        XposedHelpers.setObjectField(param.thisObject, "mMaxIconsOnAod", 0);
+                        XposedHelpers.setObjectField(param.thisObject, "mMaxIconsOnLockscreen", 0);
                         XposedHelpers.setObjectField(param.thisObject, "mMaxIconsOnLockscreen", 0);
                     }
                 }
@@ -123,9 +135,13 @@ public class NotificationIconColumns extends BaseHook {
                 protected void before(MethodHookParam param) {
                     if (mShowNotificationIcons) {
                         XposedHelpers.setObjectField(param.thisObject, "mMaxStaticIcons", maxIconsNum);
+                        XposedHelpers.setObjectField(param.thisObject, "mMaxIconsOnAod", maxIconsNum);
+                        XposedHelpers.setObjectField(param.thisObject, "mMaxIconsOnLockscreen", maxIconsNum);
                         XposedHelpers.setObjectField(param.thisObject, "mIsStaticLayout", true);
                     } else {
                         XposedHelpers.setObjectField(param.thisObject, "mMaxStaticIcons", 0);
+                        XposedHelpers.setObjectField(param.thisObject, "mMaxIconsOnAod", 0);
+                        XposedHelpers.setObjectField(param.thisObject, "mMaxIconsOnLockscreen", 0);
                     }
                 }
             }
@@ -138,8 +154,11 @@ public class NotificationIconColumns extends BaseHook {
                 protected void before(MethodHookParam param) {
                     if (mShowNotificationIcons) {
                         XposedHelpers.setObjectField(param.thisObject, "mMaxIconsOnLockscreen", maxIconsNum);
+                        XposedHelpers.setObjectField(param.thisObject, "mMaxIconsOnAod", maxIconsNum);
+                        XposedHelpers.setObjectField(param.thisObject, "mMaxIconsOnLockscreen", maxIconsNum);
                     } else {
                         XposedHelpers.setObjectField(param.thisObject, "mMaxIconsOnLockscreen", 0);
+                        XposedHelpers.setObjectField(param.thisObject, "mMaxIconsOnAod", 0);
                     }
                 }
             }
